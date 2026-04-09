@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background: #ffedd9;
+    color: #d6dfed;
+    height: 100vh;
+}
+
+span {
+    color: #3b548b;
+}
+
+.container {
+    color:#3b548b;
+}
+
+main {
+    text-align: justify;
+}
+
+nav-pills .nav-link {
+    color: #3b548b;
+}
+

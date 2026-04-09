@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block main %}
+        <div class="container">
+            <div class="px-4 py-5 my-5 text-justify">
+                <h1 class="display-5 fw-bold">Entre em contato</h1>
+                <p class="lead mb-4">Estou à disposição para esclarecer dúvidas e agendar uma consulta.</p>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name" required="">
+                    <label for="floatingInput">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required="">
+                    <label for="floatingInput">E-mail</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingInput" placeholder="(99) 99999-9999" required="" maxlength="15">
+                    <label for="floatingInput">Telefone</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                     <label for="floatingTextarea2">Deixe a sua mensagem</label>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Enviar</button>
+                    <button type="reset" class="btn btn-outline-secondary btn-lg px-4 fw-bold">Limpar</button>
+                </div>
+            </div>
+        </div>
+{% endblock %}

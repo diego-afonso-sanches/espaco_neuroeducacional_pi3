@@ -1,0 +1,69 @@
+{% extends 'index.html' %}
+
+{% block main %}
+        <div class="container">
+            <div class="px-4 py-5 my-5 text-center">
+                <h1 class="display-5 fw-bold">Sobre mim...</h1>
+                <img src="{{ url_for('static', filename='perfil.jpg') }}" alt="Foto de Suelen Gregório" width="200" height="200" class="rounded-circle mt-4">
+            </div>
+            <div class="px-4 py-5 my-5 text-justify">
+                <p class="lead mb-4 fw-bold">Sou Suelen e possuo as seguintes formações acadêmicas:</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Graduações
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="lead mb-4">
+                                    <li>2021 - Licenciatura em Pedagogia - Universidade Anhanguera - Uniderp, UNIDERP.</li>
+                                    <li>2023 - Licenciatura em Matemática - Centro Universitário Cidade Verde, UniCV.</li>
+                                    <li>2023 - Licenciatura em Física - Centro Universitário FAVENI, UNIFAVENI.</li>
+                                    <li>Em andamento - Terapia Ocupacional - Centro Universitário Leonardo da Vinci, UNIASSELVI.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Pós-graduações
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="lead mb-4">
+                                    <li>2022 - Especialização em Neuropsicopedagogia Clínica - Faculdade Venda Nova do Imigrante, FAVENI.</li>
+                                    <li>2024 - Especialização em Educação Matemática na Contemporaneidade - Universidade Federal de Alfenas, UNIFAL.</li>
+                                    <li>Em andamento - Especialização em Educação 5.0: Metodologias Ativas e Ensino Híbrido - Universidade Estadual Paulista Júlio de Mesquita Filho, UNESP, Brasil.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Formações Complementares
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="lead mb-4">
+                                    <li>2022 - Curso de Capacitação: Biologia (240h) - Faculdade Venda Nova do Imigrante, FAVENI.</li>
+                                    <li>2022 - Curso de Capacitação: Educação Musical (240h) - Faculdade Venda Nova do Imigrante, FAVENI.</li>
+                                    <li>2022 - Curso on-line: Alfabetização Baseada na Ciência (180h) - AVAMEC.</li>
+                                    <li>2025 - Curso: Aplicador ABA no Autismo (Applied Behavior Analysis) (10h) - ABA Treinamentos.</li>
+                                    <li>2025 - Curso: Aplicador ABA no Autismo (Applied Behavior Analysis) (40h) - ABA Treinamentos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="lead mb-4 fw-bold">Consulte mais detalhes em meu Currículo Lattes.</p>
+            <a href="https://lattes.cnpq.br/2650613452487362" class="btn btn-primary btn-lg fw-bold" target="_blank" rel="noopener noreferrer" role="button">Acessar Currículo Lattes</a>
+            </div>
+{% endblock %}
