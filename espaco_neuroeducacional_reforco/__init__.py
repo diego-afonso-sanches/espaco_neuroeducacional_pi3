@@ -10,6 +10,6 @@ bootstrap = Bootstrap5(app)
 from flask_bcrypt import Bcrypt
 from espaco_neuroeducacional_reforco import routes
 
-app.config['SECRET_KEY'] = '2e54a9fb34553a8831fdbdf814771987'
+app.config['SECRET_KEY'] = ''
 
 bcrypt = Bcrypt(app)
