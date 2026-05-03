@@ -1,5 +1,5 @@
 from espaco_neuroeducacional_reforco import database
-from datetime import datetime
+from datetime import datetime, timezone
 
 class Mensagem(database.Model):
     __tablename__ = 'Mensagem'
@@ -8,9 +8,7 @@ class Mensagem(database.Model):
     email = database.Column(database.String(120), nullable=False)
     telefone = database.Column(database.String(11), nullable=False)
     mensagem = database.Column(database.Text, nullable=False)
-    enviado_em = database.Column(database.DateTime, nullable=False, default=datetime.utcnow)
+    enviado_em = database.Column(database.DateTime, nullable=False, default=lambda: datetime.now(timezone.utc))
 
     def __repr__(self):
         return f'<Mensagem {self.id} {self.email}>'
-
-
